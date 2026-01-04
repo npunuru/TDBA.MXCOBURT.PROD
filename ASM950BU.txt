@@ -1,0 +1,13 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                      0000010A
+         DBURSTR                                                       X0000020A
+               ABEND=YES,                                              X0000030A
+               MULTUSE=YES,                                            X0000040A
+               TXNUNDO=NO,                                             X0000050A
+               WRITE=NO                                                 0000060A
+         DBURTBL DBID=885,TBLNAM=BLP,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000070A
+         DBURTBL DBID=885,TBLNAM=CBP,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000070A
+         DBURTBL DBID=855,TBLNAM=PAC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000080A
+         DBURTBL DBID=809,TBLNAM=HAE,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000080A
+         DBUREND SYSTEM=OS,USRINFO=BATCH URT ASM950BU                   0000120A
+         END                                                            0000150A
+<<<END:ASM950BU>>>                                                              

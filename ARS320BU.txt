@@ -1,0 +1,15 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             A
+         DBURSTR                                                       X       A
+               ABEND=YES,                                              X       A
+               MULTUSE=YES,                                            X       A
+               TXNUNDO=YES,                                            X       A
+               WRITE=NO                                                        A
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=853,TBLNAM=UAB,ACCESS=RAN,SYNONYM=YES,UPDATE=YES         A
+         DBURTBL DBID=885,TBLNAM=BLP,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=896,TBLNAM=LCI,ACCESS=RAN,SYNONYM=YES,UPDATE=YES         A
+         DBUREND                                                       X       A
+               SYSTEM=OS,                                              X       A
+               USRINFO=BATCH URT ARS320BU                                      A
+         END                                                                   A
+<<<END:ARS320BU>>>                                                              

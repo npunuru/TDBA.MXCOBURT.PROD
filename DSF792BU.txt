@@ -1,0 +1,11 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                      0000010D
+         DBURSTR                                                       X0000020D
+               ABEND=YES,                                              X0000030D
+               MULTUSE=YES,                                            X0000040D
+               TXNUNDO=YES,                                            X0000050D
+               WRITE=NO                                                 0000060D
+         DBURTBL DBID=165,TBLNAM=NVD,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000061D
+         DBURTBL DBID=848,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0000061D
+         DBUREND SYSTEM=OS,USRINFO=BATCH URT DSF792BU                   0000120D
+         END                                                            0000150D
+<<<END:DSF792BU>>>                                                              

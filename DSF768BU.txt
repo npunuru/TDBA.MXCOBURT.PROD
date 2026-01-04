@@ -1,0 +1,13 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             D
+         DBURSTR                                                       X       D
+               ABEND=YES,                                              X       D
+               MULTUSE=YES,                                            X       D
+               TXNUNDO=YES,                                            X       D
+               WRITE=NO                                                        D
+         DBURTBL DBID=235,TBLNAM=FCX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          D
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          D
+         DBUREND                                                       X       D
+               SYSTEM=OS,                                              X       D
+               USRINFO=BATCH URT DSF768BU                                      D
+         END                                                                   D
+<<<END:DSF768BU>>>                                                              
