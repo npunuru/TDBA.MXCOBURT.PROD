@@ -1,0 +1,36 @@
+//#AAAACPY JOB (T,L3C,P250),'MX COBOL',CLASS=D,MSGCLASS=X,              0001000$
+//      REGION=2M                                                       0073871$
+/*ROUTE PRINT U0250                                                     0004000$
+//******************************************************************           $
+//* !!!!   USE THIS JCL TO COPY MULTIPLE URT SOURCES !!!!                      $
+//*        ================================+++++++==                           $
+//* NOTES  - ASSEMBLY (COMPILE & LINK) WILL HAVE TO BE DONE SEPARATELY         $
+//* =====  - REPLACE 'PROGRAM1' WITH URT MEMBER1,                              $
+//*                  'PROGRAM2' WITH URT MEMBER2, ETC. IN *BOTH* STEPS.        $
+//*        - DELETE / ADD TO "SELECT MEMBER=' LIST AS NEEDED.                  $
+//* STEPS:                                                                     $
+//* 1- COPIES PRODUCTION SOURCE URT'S TO BACKUP LIBRARY                        $
+//* 2- COPIES TEST (NEW) SOURCE URT'S TO PRODUCTION LIBRARY                    $
+//*-----------------------------------------------------------------           $
+//* COPIES PROD SOURCE TO BACKUP SOURCE (MULTIPLE MEMBERS)                     $
+//*-----------------------------------------------------------------           $
+//CPY2BKUP EXEC PGM=IEBCOPY                                                    $
+//SYSPRINT  DD SYSOUT=*                                                        $
+//INPDS   DD DSN=TDBA.MXCOBURT.PROD,DISP=SHR                                   $
+//OUTPDS    DD DSN=TDBA.MXCOBURT.PROD.BACKUP,DISP=SHR                          $
+//SYSIN     DD *                                                               $
+  COPY O=OUTPDS,I=((INPDS,R))                                                  $
+  SELECT MEMBER=(PROGRAM1,PROGRAM2,PROGRAM3,PROGRAM4)                          $
+/*                                                                             $
+//*-----------------------------------------------------------------           $
+//* COPIES TEST SOURCE TO PROD SOURCE                                          $
+//*-----------------------------------------------------------------           $
+//CPY2PROD EXEC PGM=IEBCOPY,COND=(04,LT)                                       $
+//SYSPRINT  DD SYSOUT=*                                                        $
+//INPDS   DD DSN=TEST.TBED00.URT.MXCOBOL.SOURCE,DISP=SHR                       $
+//OUTPDS    DD DSN=TDBA.MXCOBURT.PROD,DISP=SHR                                 $
+//SYSIN     DD *                                                               $
+  COPY O=OUTPDS,I=((INPDS,R))                                                  $
+  SELECT MEMBER=(PROGRAM1,PROGRAM2,PROGRAM3,PROGRAM4)                          $
+/*                                                                             $
+<<<END:$CPYMANY>>>                                                              

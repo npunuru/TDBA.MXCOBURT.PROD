@@ -1,0 +1,12 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             B
+         DBURSTR                                                       X       B
+               ABEND=YES,                                              X       B
+               MULTUSE=YES,                                            X       B
+               TXNUNDO=YES,                                            X       B
+               WRITE=NO                                                        B
+         DBURTBL DBID=886,TBLNAM=CPE,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBUREND                                                       X       B
+               SYSTEM=OS,                                              X       B
+               USRINFO=BATCH URT BLG094BU                                      B
+         END                                                                   B
+<<<END:BLG094BU>>>                                                              
