@@ -1,0 +1,15 @@
+         TITLE 'BATCH URT ZCA986BU'                                     0000100Z
+         DBURSTR                                                       X0000200Z
+               ABEND=YES,                                              X0000300Z
+               CSECT=ZCA986BU,                                         X0000400Z
+               MSTNAM=DBTTLST,                                         X0000500Z
+               MULTUSE=YES,                                            X0000600Z
+               PRTY=7,                                                 X0000700Z
+               TXNUNDO=NO,                                             X0000800Z
+               WRITE=NO                                                 0000900Z
+         DBURTBL DBID=855,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000910Z
+         DBURTBL DBID=855,TBLNAM=A02,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000920Z
+         DBURTBL DBID=884,TBLNAM=MFH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0000930Z
+         DBUREND SYSTEM=OS,USRINFO=BATCH ZCA986BU                       0000940Z
+         END                                                            0000950Z
+<<<END:ZCA986BU>>>                                                              

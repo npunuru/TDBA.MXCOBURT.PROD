@@ -1,0 +1,13 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             B
+         DBURSTR                                                       X       B
+               ABEND=YES,                                              X       B
+               MULTUSE=YES,                                            X       B
+               TXNUNDO=YES,                                            X       B
+               WRITE=NO                                                        B
+         DBURTBL DBID=857,TBLNAM=OCH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CCN,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=812,TBLNAM=MCS,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBUREND SYSTEM=OS,USRINFO=BATCH URT BLG538BU                          B
+         END                                                                   B
+<<<END:BLG538BU>>>                                                              

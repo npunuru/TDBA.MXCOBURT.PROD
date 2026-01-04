@@ -1,0 +1,26 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             B
+         DBURSTR                                                       X       B
+               ABEND=YES,                                              X       B
+               TXNUNDO=YES,                                            X       B
+               MULTUSE=YES                                                     B
+         DBURTBL DBID=886,TBLNAM=CCN,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=857,TBLNAM=OCH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=858,TBLNAM=TCH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=095,TBLNAM=R32,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=855,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=855,TBLNAM=PAC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=874,TBLNAM=TXC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=022,TBLNAM=JAA,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB1,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB2,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB3,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB4,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=855,TBLNAM=MUF,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=154,TBLNAM=VX1,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=154,TBLNAM=VX2,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=154,TBLNAM=VX3,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBUREND SYSTEM=OS,USRINFO=BATCH URT BLG250BU                          B
+         END                                                                   B
+<<<END:BLG250BU>>>                                                              
