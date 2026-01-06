@@ -1,0 +1,28 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                             B
+         DBURSTR                                                       X       B
+               ABEND=YES,                                              X       B
+               MULTUSE=YES,                                            X       B
+               TXNUNDO=YES,                                            X       B
+               WRITE=NO                                                        B
+         DBURTBL DBID=886,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CCP,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CCX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CPC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CPH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=886,TBLNAM=CTH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=885,TBLNAM=BLP,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=855,TBLNAM=PAC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=022,TBLNAM=JAA,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=856,TBLNAM=BDN,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=336,TBLNAM=MUX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=378,TBLNAM=DSD,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB1,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB2,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB3,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBURTBL DBID=162,TBLNAM=CB4,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          B
+         DBUREND                                                       X       B
+               SYSTEM=OS,                                              X       B
+               USRINFO=BATCH URT BLG150BU                                      B
+         END                                                                   B
+<<<END:BLG150BU>>>                                                              
