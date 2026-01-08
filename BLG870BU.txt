@@ -1,0 +1,15 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                      0001000B
+         DBURSTR                                                       X0002000B
+               ABEND=YES,                                              X0003000B
+               MULTUSE=YES,                                            X0004000B
+               TXNUNDO=NO,                                             X0005000B
+               WRITE=NO                                                 0006000B
+         DBURTBL DBID=848,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0008000B
+         DBURTBL DBID=886,TBLNAM=BDX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0012010B
+         DBURTBL DBID=856,TBLNAM=BDN,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0012100B
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0012200B
+         DBUREND                                                       X0013000B
+               SYSTEM=OS,                                              X0014000B
+               USRINFO=BATCH URT BLG870BU                               0015000B
+         END                                                            0016000B
+<<<END:BLG870BU>>>                                                              

@@ -1,0 +1,17 @@
+         TITLE 'DYNAMIC URT LOAD - EXECUTION TIME'                      0000010A
+         DBURSTR                                                       X0000020A
+               ABEND=YES,                                              X0000030A
+               MULTUSE=YES,                                            X0000040A
+               TXNUNDO=NO,                                             X0000050A
+               WRITE=NO                                                 0000060A
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=855,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=855,TBLNAM=PAC,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=854,TBLNAM=QAD,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=886,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=086,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=849,TBLNAM=F07,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBURTBL DBID=372,TBLNAM=DNA,ACCESS=RAN,SYNONYM=YES,UPDATE=NO          A
+         DBUREND SYSTEM=OS,USRINFO=BATCH URT ATO180BU                   0000120A
+         END                                                            0000150A
+<<<END:ATO180BU>>>                                                              

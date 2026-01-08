@@ -1,0 +1,39 @@
+         TITLE 'BATCH URT BBR020BU'                                     0001000B
+         DBURSTR                                                       X0002000B
+               ABEND=YES,                                              X0003000B
+               CSECT=BBR020BU,                                         X0004000B
+               MSTNAM=DBTTLST,                                         X0005000B
+               MULTUSE=YES,                                            X0006000B
+               PRTY=7,                                                 X0007000B
+               TXNUNDO=YES,                                            X0008000B
+               WRITE=NO                                                 0009000B
+         DBURTBL DBID=031,TBLNAM=OAB,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0010000B
+         DBURTBL DBID=853,TBLNAM=UAB,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0011000B
+         DBURTBL DBID=853,TBLNAM=UAG,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0012000B
+         DBURTBL DBID=848,TBLNAM=A01,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0013000B
+         DBURTBL DBID=849,TBLNAM=DVF,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0014000B
+         DBURTBL DBID=810,TBLNAM=PAX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0015000B
+         DBURTBL DBID=064,TBLNAM=UMS,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0016000B
+         DBURTBL DBID=884,TBLNAM=AMA,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0017000B
+         DBURTBL DBID=884,TBLNAM=FCH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0018000B
+         DBURTBL DBID=884,TBLNAM=FCA,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0019000B
+         DBURTBL DBID=855,TBLNAM=MUF,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0020000B
+         DBURTBL DBID=884,TBLNAM=MUS,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0021000B
+         DBURTBL DBID=884,TBLNAM=MFH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0022000B
+         DBURTBL DBID=885,TBLNAM=BLP,ACCESS=RAN,SYNONYM=YES,UPDATE=YES  0023000B
+         DBURTBL DBID=886,TBLNAM=CTH,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0024000B
+         DBURTBL DBID=886,TBLNAM=CTX,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0025000B
+         DBURTBL DBID=886,TBLNAM=CLO,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0026000B
+         DBURTBL DBID=886,TBLNAM=CTF,ACCESS=RAN,SYNONYM=YES,UPDATE=NO   0027000B
+         DBURTBL                                                       X0029000B
+               ACCESS=RANSEQ,                                          X0030000B
+               SEQBUFS=10,                                             X0031000B
+               GETBLK=14364,                                           X0032000B
+               ELMCHG=NO,                                              X0033000B
+               DBID=855,                                               X0034000B
+               SYNONYM=YES,                                            X0035000B
+               TBLNAM=A01,                                             X0036000B
+               UPDATE=NO                                                0037000B
+         DBUREND SYSTEM=OS,USRINFO=BATCH BBR020BU                       0038000B
+         END                                                            0039000B
+<<<END:BBR020BU>>>                                                              
