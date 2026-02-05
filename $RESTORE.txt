@@ -1,4 +1,3 @@
-                                                           
 //#P442RES JOB (T,L3C,P250),'CA COBOL',CLASS=D,MSGCLASS=X,              0001000$
 //      REGION=2M                                                       0073871$
 /*ROUTE PRINT U0250                                                     0004000$
