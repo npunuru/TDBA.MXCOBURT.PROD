@@ -30,7 +30,7 @@
 //OUTPDS    DD DSN=TDBA.MXCOBURT.PROD,DISP=SHR                                 $
 //SYSIN     DD *                                                               $
   COPY O=OUTPDS,I=((INPDS,R))                                                  $
-  SELECT MEMBER=(XXXXXXBU)                                                     $
+  SELECT MEMBER=(XXXXXXBU)122                                                     $
 /*                                                                             $
 //*-----------------------------------------------------------------           $
 //* COMPILES & LOADS URT                                                       $
